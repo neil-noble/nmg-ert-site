@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>NMG ERT Daily Roster</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0e1117;
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      padding: 12px;
+    }
+    .header {
+      background: #083045;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .header-sub {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .1em; color: rgba(255,255,255,.6); margin-bottom: 4px;
+    }
+    .header-title  { font-size: 20px; font-weight: 700; }
+    .header-date   { font-size: 13px; color: rgba(255,255,255,.7); margin-top: 4px; }
+    .summary {
+      display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 16px;
+    }
+    .metric {
+      flex: 1; min-width: 110px;
+      background: #083045; border-radius: 8px;
+      padding: 14px 10px; text-align: center;
+    }
+    .metric-value { font-size: 44px; font-weight: 700; line-height: 1; }
+    .metric-label { font-size: 12px; color: rgba(255,255,255,.7); margin-top: 6px; }
+    .divider       { border: none; border-top: 1px solid #222; margin: 20px 0; }
+    .section-title { font-size: 17px; font-weight: 700; margin-bottom: 12px; }
+    .gauges {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
+    }
+    .gauge-cell    { width: calc(33.33% - 5px); min-width: 130px; }
+    .roster-table  { width: 100%; border-collapse: collapse; font-size: 14px; }
+    .roster-table th {
+      text-align: left; padding: 8px 10px; font-size: 13px;
+      border-bottom: 2px solid #2a2a2a; color: rgba(255,255,255,.8);
+    }
+    .roster-table td {
+      padding: 8px 10px; border-bottom: 1px solid #1a1a1a; vertical-align: top;
+    }
+    .roster-table tr:last-child td { border-bottom: none; }
+    .td-comp       { font-size: 12px; color: #aaa; }
+    .footer {
+      text-align: center; color: #555; font-size: 11px;
+      margin-top: 28px; padding-bottom: 12px; line-height: 1.8;
+    }
+    @media (max-width: 600px) {
+      .td-hide   { display: none; }
+      .gauge-cell { width: calc(50% - 4px); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="header-sub">New Murchison Gold &mdash; Crown Prince Operation</div>
+    <div class="header-title">Emergency Response Team &mdash; Daily Roster</div>
+    <div class="header-date">Wednesday, 15 April 2026</div>
+  </div>
+
+  <div class="summary">
+    <div class="metric">
+      <div class="metric-value">1</div>
+      <div class="metric-label">MESO DS On Call</div>
+    </div>
+    <div class="metric">
+      <div class="metric-value">6</div>
+      <div class="metric-label">ERT On Site</div>
+    </div>
+    <div class="metric">
+      <div class="metric-value">5</div>
+      <div class="metric-label">Day Shift</div>
+    </div>
+    <div class="metric">
+      <div class="metric-value">1</div>
+      <div class="metric-label">Night Shift</div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <div class="section-title">&#9728;&#65039; Day Shift &mdash; 5 members</div>
+  <div class="gauges" id="day-gauges"><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 100.00 28.00" fill="none" stroke="#15803d" stroke-width="15" stroke-linecap="round"/><line x1="100.00" y1="37.00" x2="100.00" y2="19.00" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">2</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 2</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Advanced First Aid</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Road Crash Rescue</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Fire Team Operations</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Open Circuit BA</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">HAZMAT</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Confined Space Rescue</text></svg></div></div>
+  <div style="overflow-x:auto"><table class="roster-table"><thead><tr><th>Name</th><th class="td-hide">Role</th><th class="td-hide">Company</th><th>Mobile</th><th>ERT Competencies</th></tr></thead><tbody><tr><td class="td-name">Hayden BALL</td><td class="td-hide">OZ - Dump Truck Operator</td><td class="td-hide">Ozland Drill and Blast</td><td>+61426951665</td><td class="td-comp">HLTAID014 Provide Advanced First Aid</td></tr><tr><td class="td-name">Kim BURTON</td><td class="td-hide">Administration Officer</td><td class="td-hide">New Murchison Gold Ltd</td><td>+61414137343</td><td class="td-comp">—</td></tr><tr><td class="td-name">Rachel DAY</td><td class="td-hide">Project Administrator</td><td class="td-hide">Ozland Drill and Blast</td><td>+61457241220</td><td class="td-comp">HLTAID014 Provide Advanced First Aid; PUAFIR207 Operate breathing apparatus open circuit; PUAFIR306 Identify, detect and monitor hazardous materials at an incident; PUASAR024 Undertake road crash rescue; PUASAR025 Undertake confined space rescue; PUASAR032 Undertake vertical rescue; RIIERR201E Conduct fire team operations</td></tr><tr><td class="td-name">Steele SILBY-PAAKI</td><td class="td-hide">Oz - Blast Crew</td><td class="td-hide">Ozland Drill and Blast</td><td>+61402431445</td><td class="td-comp">—</td></tr><tr><td class="td-name">Wade LOCKHART</td><td class="td-hide">OZ - Trainer and Assessor</td><td class="td-hide">Ozland Drill and Blast</td><td>+61448569732</td><td class="td-comp">—</td></tr></tbody></table></div>
+
+  <hr class="divider">
+
+  <div class="section-title">&#127769; Night Shift &mdash; 1 member</div>
+  <div class="gauges" id="night-gauges"><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 37.65 64.00" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="100.00" y1="37.00" x2="100.00" y2="19.00" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 2</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Advanced First Aid</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Road Crash Rescue</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">0</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Fire Team Operations</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Open Circuit BA</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">HAZMAT</text></svg></div><div class="gauge-cell"><svg viewBox="0 0 200 172" width="100%" style="display:block"><path d="M 37.65 136.00 A 72 72 0 1 1 162.35 136.00" fill="none" stroke="#252525" stroke-width="15"/><path d="M 37.65 136.00 A 72 72 0 0 1 29.09 87.50" fill="none" stroke="#b91c1c" stroke-width="15" stroke-linecap="round"/><line x1="140.50" y1="51.74" x2="152.07" y2="37.95" stroke="white" stroke-width="2.5" stroke-linecap="round"/><text x="100" y="94" text-anchor="middle" font-size="40" font-weight="700" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">1</text><text x="100" y="120" text-anchor="middle" font-size="13" fill="#777" font-family="-apple-system,BlinkMacSystemFont,sans-serif">min 4</text><text x="100" y="165" text-anchor="middle" font-size="13" font-weight="600" fill="white" font-family="-apple-system,BlinkMacSystemFont,sans-serif">Confined Space Rescue</text></svg></div></div>
+  <div style="overflow-x:auto"><table class="roster-table"><thead><tr><th>Name</th><th class="td-hide">Role</th><th class="td-hide">Company</th><th>Mobile</th><th>ERT Competencies</th></tr></thead><tbody><tr><td class="td-name">Ariel CORTALE</td><td class="td-hide">OZ- Trainee Dump Truck Operator</td><td class="td-hide">Ozland Drill and Blast</td><td>+61402694580</td><td class="td-comp">HLTAID014 Provide Advanced First Aid; PUAFIR207 Operate breathing apparatus open circuit; PUAFIR306 Identify, detect and monitor hazardous materials at an incident; PUASAR024 Undertake road crash rescue; PUASAR025 Undertake confined space rescue; PUASAR032 Undertake vertical rescue</td></tr></tbody></table></div>
+
+  <div class="footer">
+    Generated automatically &mdash; NMG ERT Roster System &mdash; Source: PeopleTray<br>
+    Last updated: 15 Apr 2026, 09:34 AM AWST
+  </div>
+
+</body>
+</html>
