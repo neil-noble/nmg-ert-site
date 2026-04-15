@@ -38,9 +38,10 @@
     .divider       { border: none; border-top: 1px solid #222; margin: 20px 0; }
     .section-title { font-size: 17px; font-weight: 700; margin-bottom: 12px; }
     .gauges {
-      display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px;
+      display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 16px;
     }
-    .gauge-cell    { width: calc(33.33% - 5px); min-width: 130px; }
+    /* Desktop: all 6 dials in one row */
+    .gauge-cell    { width: calc(16.6667% - 4px); min-width: 0; }
     .roster-table  { width: 100%; border-collapse: collapse; font-size: 14px; }
     .roster-table th {
       text-align: left; padding: 8px 10px; font-size: 13px;
@@ -55,8 +56,13 @@
       text-align: center; color: #555; font-size: 11px;
       margin-top: 28px; padding-bottom: 12px; line-height: 1.8;
     }
-    @media (max-width: 600px) {
-      .td-hide   { display: none; }
+    /* Tablet: 3 per row */
+    @media (max-width: 768px) {
+      .gauge-cell { width: calc(33.33% - 4px); }
+    }
+    /* Mobile: 2 per row */
+    @media (max-width: 480px) {
+      .td-hide    { display: none; }
       .gauge-cell { width: calc(50% - 4px); }
     }
   </style>
@@ -102,7 +108,7 @@
 
   <div class="footer">
     Generated automatically &mdash; NMG ERT Roster System &mdash; Source: PeopleTray<br>
-    Last updated: 15 Apr 2026, 09:51 AM AWST
+    Last updated: 15 Apr 2026, 09:59 AM AWST
   </div>
 
 </body>
