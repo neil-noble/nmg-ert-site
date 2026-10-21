@@ -133,11 +133,13 @@
     .oz-x          { position: absolute; top: 6px; transform: translateX(-50%); white-space: nowrap; }
     .oz-x:first-child { transform: none; }
     .oz-legend     { margin: 12px 0; font-size: 13px; }
-    /* The verdict is the same size as its figure (Neil, 2026-10-22); the pair scales with
-       the screen so "100% Projected Not Compliant" stays inside its tile */
+    /* Figure and verdict are the same size as the section heading (Neil, 2026-10-22) */
     .oz-verdict    { margin-left: .25em; }
     #ozland-ert .metric-value, #ozland-forecast .metric-value {
-      font-size: clamp(15px, 2.3vw, 44px); line-height: 1.15;
+      font-size: 17px; line-height: 1.3;
+    }
+    @media (max-width: 360px) {
+      #ozland-ert .metric, #ozland-forecast .metric { flex-basis: 100%; }
     }
     .oz-note       { font-size: 13px; line-height: 1.5; color: #444; }
     .tm {
@@ -233,7 +235,7 @@
 
   <div class="footer">
     Generated automatically &mdash; NMG ERT Roster System &mdash; Source: PeopleTray<br>
-    Last updated: 22 Oct 2026, 07:13 AM AWST
+    Last updated: 22 Oct 2026, 07:18 AM AWST
   </div>
 
 </body>
